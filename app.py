@@ -5,6 +5,7 @@ import pymysql
 import gunicorn
 
 app = Flask(__name__)
+app=Flask(__name__,template_folder='templates')
 
 app.secret_key = "Super Secret"
 

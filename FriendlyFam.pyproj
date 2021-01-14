@@ -37,25 +37,25 @@
     <Content Include="static\style.css">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\add.html">
+    <Content Include="templates\add.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\edit.html">
+    <Content Include="templates\edit.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\home.html">
+    <Content Include="templates\home.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\index.html">
+    <Content Include="templates\index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\layout.html">
+    <Content Include="templates\layout.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\myEvents.html">
+    <Content Include="templates\myEvents.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="template\signup.html">
+    <Content Include="templates\signup.html">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>
@@ -71,7 +71,7 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="template\" />
+    <Folder Include="templates\" />
     <Folder Include="static\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
