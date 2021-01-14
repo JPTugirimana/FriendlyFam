@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request, redirect, session
-#import mysql.connector
-import pymysql
+import mysql.connector
+#import pymysql
 import gunicorn
 
 app = Flask(__name__)
@@ -10,8 +10,8 @@ app=Flask(__name__,static_folder='static')
 
 app.secret_key = "Super Secret"
 
-#my_db = mysql.connector.connect(
-my_db = pymysql.connect(
+my_db = mysql.connector.connect(
+#my_db = pymysql.connect(
   host="us-cdbr-east-03.cleardb.com",
   user="b41e5d7a9fe22b",
   password="8f65782e",
