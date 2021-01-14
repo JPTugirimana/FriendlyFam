@@ -1,13 +1,15 @@
 
 from flask import Flask, render_template, request, redirect, session
-import mysql.connector
+#import mysql.connector
+import pymysql
 import gunicorn
 
 app = Flask(__name__)
 
 app.secret_key = "Super Secret"
 
-my_db = mysql.connector.connect(
+#my_db = mysql.connector.connect(
+my_db = pymsql.connect(
   host="us-cdbr-east-03.cleardb.com",
   user="b41e5d7a9fe22b",
   password="8f65782e",
