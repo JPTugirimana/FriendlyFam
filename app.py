@@ -13,8 +13,7 @@ my_db = pymsql.connect(
   host="us-cdbr-east-03.cleardb.com",
   user="b41e5d7a9fe22b",
   password="8f65782e",
-  database="heroku_a0217320959ca67",
-  use_pure=True
+  database="heroku_a0217320959ca67"
 )
 
 mycursor = my_db.cursor()
