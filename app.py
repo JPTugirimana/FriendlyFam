@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.secret_key = "Super Secret"
 
 #my_db = mysql.connector.connect(
-my_db = pymsql.connect(
+my_db = pymysql.connect(
   host="us-cdbr-east-03.cleardb.com",
   user="b41e5d7a9fe22b",
   password="8f65782e",
