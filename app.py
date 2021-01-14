@@ -147,7 +147,6 @@ def signup():
             sql = "INSERT INTO users(username, password) VALUES (%s, %s)"
             values =[username,password]
             mycursor.execute(sql, values)
-
             my_db.commit()
 
             session['username'] = username
