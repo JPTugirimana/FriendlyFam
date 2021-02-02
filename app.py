@@ -10,11 +10,19 @@ app=Flask(__name__,template_folder='templates')
 app.secret_key = "Super Secret"
 
 #my_db = mysql.connector.connect(
+#my_db = pymysql.connect(
+#  host="us-cdbr-east-03.cleardb.com",
+#  user="b41e5d7a9fe22b",
+#  password="8f65782e",
+#  database="heroku_a0217320959ca67"
+#)
+
+# Connecting to a new database
 my_db = pymysql.connect(
-  host="us-cdbr-east-03.cleardb.com",
-  user="b41e5d7a9fe22b",
-  password="8f65782e",
-  database="heroku_a0217320959ca67"
+  host="sql3.freesqldatabase.com",
+  user="sql3390258",
+  password="CYEqcUG2Tq",
+  database="sql3390258"
 )
 
 mycursor = my_db.cursor()

@@ -5,7 +5,7 @@ body {
     padding-top: 10px;
 }
 
-    h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #444444;
 }
 
@@ -133,12 +133,6 @@ body {
         .events > li:hover .actions {
             display: block;
         }
-
-.btn {
-    font-size: 12px;
-    /*  padding: 7px 20px;*/
-    border-radius: 9px;
-}
 
 /* List Events Page-level styles*/
 .host {
