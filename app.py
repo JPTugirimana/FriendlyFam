@@ -3,11 +3,14 @@ from flask import Flask, render_template, request, redirect, session
 #import mysql.connector
 import pymysql
 import gunicorn
+from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
 app=Flask(__name__,template_folder='templates')
 
 app.secret_key = "Super Secret"
+
+csrf = CSRFProtect(app)
 
 #my_db = mysql.connector.connect(
 #my_db = pymysql.connect(

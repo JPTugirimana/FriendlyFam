@@ -7,10 +7,11 @@
     <div class="container text-left">
         <div class="inputbox-add-event" id="add-event">
             <form method="POST" action="/update/{{event[0]}}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
-                    <input class="form-control item" name="description" placeholder="Describe: e.g. Emily's Birthday Party" required value="{{event[2]}}" >
-                    <input class="form-control item" name="day" placeholder="Date: e.g. Jan. 20" required value="{{event[3]}}" >
-                    <input class="form-control item" name="time" placeholder="Time: e.g. 5:00 pm" required value="{{event[4]}}" >
+                    <input class="form-control item" name="description" placeholder="Describe: e.g. Emily's Birthday Party" required value="{{event[2]}}">
+                    <input class="form-control item" name="day" placeholder="Date: e.g. Jan. 20" required value="{{event[3]}}">
+                    <input class="form-control item" name="time" placeholder="Time: e.g. 5:00 pm" required value="{{event[4]}}">
                     <select class="form-control item" name="status" required>
                         <option selected hidden>{{event[5]}}</option>
                         <option value="Still on">Still on</option>

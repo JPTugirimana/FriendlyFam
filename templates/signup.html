@@ -15,6 +15,7 @@
         </div>
         <div class="registration-form">
             <form id="myform" action="/signup" method="post" onsubmit="return validation()">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <h3 class="text-center">Create your account</h3>
 
                 {% if message %}

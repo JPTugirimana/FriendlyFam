@@ -7,9 +7,10 @@
     <div class="container text-left">
         <div class="inputbox-add-event" id="add-event">
             <form method="POST" action="/add">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                 <div class="form-group">
-                    <input class="form-control item" name="description" placeholder="Describe: e.g. Emily's Birthday Party" required>
-                    <input class="form-control item" name="day" placeholder="Date: e.g. Jan. 20" required>
+                    <input class="form-control item" name="description" placeholder="Describe: e.g. Emily's Birthday Party"  required>
+                    <input class="form-control item" name="day" placeholder="Date: e.g. Jan. 20"  required>
                     <input class="form-control item" name="time" placeholder="Time: e.g. 5:00 pm" required>
                     <button class="btn btn-primary" id="event-submit" type="submit">Add Event </button>
                 </div>
